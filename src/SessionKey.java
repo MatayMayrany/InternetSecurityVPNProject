@@ -37,16 +37,4 @@ public class SessionKey {
         return secretKey;
     }
 
-
-    public static void main(String[] args) {
-        SessionKey key1 = new SessionKey(128);
-        SessionKey key2 = new SessionKey(key1.encodeKey());
-        if (key1.getSecretKey().equals(key2.getSecretKey())) {
-            System.out.println("Pass");
-        }
-        else {
-            System.out.println("Fail");
-        }
-    }
-
 }

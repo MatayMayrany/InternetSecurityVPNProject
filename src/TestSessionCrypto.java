@@ -22,6 +22,7 @@ public class TestSessionCrypto  {
             // Copy data byte by byte from plain input to crypto output via encrypter
 
             while ((b = plainin.read()) != -1) {
+                System.out.println(b);
                 cryptoout.write(b);
             }
         }
@@ -38,6 +39,7 @@ public class TestSessionCrypto  {
              ) {
             // Copy data byte by byte from cipher input to plain output via decrypter
             while ((b = cryptoin.read()) != -1) {
+                System.out.println(b);
                 plainout.write(b);
             }
         }
