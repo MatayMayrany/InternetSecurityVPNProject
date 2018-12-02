@@ -21,7 +21,6 @@ public class SessionDecrypter {
     }
 
     public CipherInputStream openCipherInputStream(FileInputStream fileInputStream){
-        // write the encrypted data to fileOutputStream\
 
         try {
             Cipher cipher = Cipher.getInstance("AES/CTR/NoPadding");
