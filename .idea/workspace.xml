@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8bdf7c0-cd72-4daa-afa4-62400defb969" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cipher" afterPath="$PROJECT_DIR$/cipher" />
-      <change beforePath="$PROJECT_DIR$/out/production/VPNProject/TestSessionCrypto.class" afterPath="$PROJECT_DIR$/out/production/VPNProject/TestSessionCrypto.class" />
-      <change beforePath="$PROJECT_DIR$/src/SessionDecrypter.java" afterPath="$PROJECT_DIR$/src/SessionDecrypter.java" />
-      <change beforePath="$PROJECT_DIR$/src/SessionEncrypter.java" afterPath="$PROJECT_DIR$/src/SessionEncrypter.java" />
-    </list>
+    <list default="true" id="b8bdf7c0-cd72-4daa-afa4-62400defb969" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -232,12 +226,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543411732411</updated>
-      <workItem from="1543411734252" duration="7671000" />
+      <workItem from="1543411734252" duration="7758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7671000" />
+    <option name="totallyTimeSpent" value="7758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="0" />
