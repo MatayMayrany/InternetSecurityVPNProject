@@ -1,7 +1,7 @@
 import java.security.*;
 public class HandshakeCryptoTester {
     static String PRIVATEKEYFILE = "/Users/mataymarani/Desktop/VPNProject/private/private-pkcs8.der";
-    static String CERTFILE = "/Users/mataymarani/Desktop/VPNProject/CA.pem";
+    static String CERTFILE = "/Users/mataymarani/Desktop/VPNProject/private/CA.pem";
     static String PLAINTEXT = "Time flies like an arrow. Fruit flies like a banana.";
     static String ENCODING = "UTF-8";
     /* For converting between strings and byte arrays */

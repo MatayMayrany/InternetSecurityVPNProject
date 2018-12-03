@@ -1,3 +1,7 @@
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,14 +20,19 @@ public class HandshakeCrypto {
     public static X509Certificate certificate;
     public static FileInputStream certifcateFile;
     public static FileInputStream privateKeyFile;
-
     // encrypts data given text and key to return cipher
-    public static byte[] encrypt(byte[] plainText, Key key){
-        return null;
+    public static byte[] encrypt(byte[] plainText, Key key) throws InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchPaddingException, NoSuchAlgorithmException {
+        Cipher cipher = Cipher.getInstance("RSA");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        byte[] encryptedData = cipher.doFinal(plainText);
+        return encryptedData;
     }
     // decrypts data given cipher text and key to return plain text
-    public static byte[] decrypt(byte[] cipherText, Key key){
-        return null;
+    public static byte[] decrypt(byte[] cipherText, Key key) throws InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, IllegalBlockSizeException {
+        Cipher cipher = Cipher.getInstance("RSA");
+        cipher.init(Cipher.DECRYPT_MODE, key);
+        byte[] plainData = cipher.doFinal(cipherText);
+        return plainData;
     }
     //extracts public key from a certificate file
     public static PublicKey getPublicKeyFromCertFile(String certFile) throws CertificateException, FileNotFoundException {
