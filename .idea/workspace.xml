@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8bdf7c0-cd72-4daa-afa4-62400defb969" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/HandshakeCrypto.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CA.pem" afterPath="$PROJECT_DIR$/private/CA.pem" />
+      <change beforePath="$PROJECT_DIR$/caPubKey.pem" afterPath="$PROJECT_DIR$/private/caPubKey.pem" />
+      <change beforePath="$PROJECT_DIR$/louisCert.pem" afterPath="$PROJECT_DIR$/private/louisCert.pem" />
+      <change beforePath="$PROJECT_DIR$/src/VerifyCertificate.java" afterPath="$PROJECT_DIR$/src/VerifyCertificate.java" />
+      <change beforePath="$PROJECT_DIR$/user.pem" afterPath="$PROJECT_DIR$/private/user.pem" />
+      <change beforePath="$PROJECT_DIR$/userCSR.csr" afterPath="$PROJECT_DIR$/private/userCSR.csr" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VerifyCertificate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VerifyCertificate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SessionEncrypter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SessionEncrypter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="175">
               <caret line="30" column="60" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -30,13 +48,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyCertificate.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/VerifyCertificate.java">
+      <file leaf-file-name="HandshakeCryptoTester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HandshakeCryptoTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="30">
+              <caret line="2" column="99" lean-forward="false" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandshakeCrypto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HandshakeCrypto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +87,8 @@
       <file leaf-file-name="TestSessionCrypto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestSessionCrypto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="135">
+              <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,6 +146,9 @@
         <option value="$PROJECT_DIR$/src/SessionEncrypter.java" />
         <option value="$PROJECT_DIR$/src/SessionDecrypter.java" />
         <option value="$PROJECT_DIR$/src/VerifyCertificate.java" />
+        <option value="$PROJECT_DIR$/src/HandshakeCrypto.java" />
+        <option value="$PROJECT_DIR$/src/HandshakeCryptoTester.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -144,6 +189,11 @@
             <path>
               <item name="VPNProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="VPNProject" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VPNProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VPNProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -158,6 +208,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/private" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,12 +296,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543411732411</updated>
-      <workItem from="1543411734252" duration="13042000" />
+      <workItem from="1543411734252" duration="17544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13042000" />
+    <option name="totallyTimeSpent" value="17544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="0" />
@@ -350,19 +405,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/private/CA.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestSessionCrypto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="135">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/VerifyCertificate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SessionEncrypter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="175">
           <caret line="30" column="60" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -374,13 +445,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VerifyCertificate.java">
+    <entry file="file://$PROJECT_DIR$/src/HandshakeCrypto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HandshakeCryptoTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="99" lean-forward="false" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ import java.security.*;
 import java.security.cert.*;
 
 public class VerifyCertificate {
+    public static CertificateFactory fact;
     public static FileInputStream caFile;
     public static FileInputStream userFile;
     public static X509Certificate caCer;
@@ -16,7 +17,7 @@ public class VerifyCertificate {
     public static PublicKey userCerPublicKey;
     public static Exception exception;
     public static void main(String[] args) throws FileNotFoundException, CertificateException {
-        CertificateFactory fact = CertificateFactory.getInstance("X.509");
+        fact = CertificateFactory.getInstance("X.509");
         caFile = new FileInputStream (args[0]);
         userFile = new FileInputStream(args[1]);
         caCer = (X509Certificate) fact.generateCertificate(caFile);
