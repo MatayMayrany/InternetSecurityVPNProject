@@ -14,6 +14,7 @@ public class VerifyCertificate {
     public static String userIssuerDN;
     public static PublicKey caCerPublicKey;
     public static PublicKey userCerPublicKey;
+    public static Exception exception;
     public static void main(String[] args) throws FileNotFoundException, CertificateException {
         CertificateFactory fact = CertificateFactory.getInstance("X.509");
         caFile = new FileInputStream (args[0]);
@@ -32,10 +33,11 @@ public class VerifyCertificate {
             System.out.println("pass");
         } else{
             System.out.println("fail");
+            exception.printStackTrace();
         }
     }
 
-    public static boolean verifyCertificates() {
+    public static boolean verifyCertificates()  {
         // check dates
         try{
             caCer.checkValidity();
@@ -43,20 +45,8 @@ public class VerifyCertificate {
             userCert.checkValidity();
             userCert.verify(caCerPublicKey);
             return true;
-        } catch(CertificateNotYetValidException e) {
-            e.printStackTrace();
-        } catch (CertificateExpiredException e) {
-            e.printStackTrace();
-        } catch (CertificateException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (InvalidKeyException e) {
-            e.printStackTrace();
-        } catch (SignatureException e) {
-            e.printStackTrace();
-        } catch (NoSuchProviderException e) {
-            e.printStackTrace();
+        } catch(Exception e) {
+            exception = e;
         }
         return false;
     }
